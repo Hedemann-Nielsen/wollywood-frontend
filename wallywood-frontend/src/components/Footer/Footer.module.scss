@@ -10,6 +10,8 @@
 	.leftSection {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		color: #524641;
+		text-transform: capitalize;
 		.name {
 			font-family: "Titillium Web", sans-serif;
 			font-size: 24px;
@@ -19,6 +21,11 @@
 	}
 	.contactInfo p:first-child {
 		padding-top: 18px;
+		text-transform: uppercase;
+	}
+	.contactInfo a {
+		text-decoration: none;
+		color: #524641;
 	}
 	.social {
 		position: absolute;
@@ -27,6 +34,10 @@
 		color: #cccccc;
 		font-size: 28px;
 		width: fit-content;
+	}
+	.social > * {
+		margin: 0 2px;
+		cursor: pointer;
 	}
 }
 p {

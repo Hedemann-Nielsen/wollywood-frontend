@@ -11,14 +11,11 @@ export function Header() {
   return (
     <>
     <header className={style.header}>
-    <FaShoppingBasket className={style.basket}/>
-    <div className={style.headerNav}>
-
-    <NavLink to="/" className={style.link}><h1>wallywood</h1></NavLink>
- 
-      
-      <NavBar data={arrNavbar}></NavBar>
-    </div>
+      <FaShoppingBasket className={style.basket}/>
+      <div className={style.headerNav}>
+        <NavLink to="/" className={style.link}><h1>wallywood</h1></NavLink>
+        <NavBar data={arrNavbar}></NavBar>
+      </div>
     </header>
     </>
   )

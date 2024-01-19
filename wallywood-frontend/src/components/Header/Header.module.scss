@@ -12,14 +12,14 @@
 			color: #d97852;
 		}
 	}
-	.link {
-		text-decoration: none;
+	.headerNav {
+		display: flex;
+		.link {
+			text-decoration: none;
+		}
 	}
 }
 .basket {
 	display: flex;
 	justify-content: flex-end;
-}
-.headerNav {
-	display: flex;
 }
