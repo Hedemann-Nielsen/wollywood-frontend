@@ -1,0 +1,22 @@
+.LatestNews {
+	h2 {
+		text-transform: capitalize;
+		padding: 20px 0;
+	}
+	.LatestNewsGrid {
+		display: grid;
+		grid-template-columns: auto auto;
+		.figure {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			border: solid 1px black;
+			// gap: 23px;
+			img {
+				width: 140px;
+			}
+			// button: {
+			// 	width: 104px;
+			// }
+		}
+	}
+}

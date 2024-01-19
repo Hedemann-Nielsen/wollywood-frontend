@@ -22,4 +22,27 @@ p,
 h2,
 h3 {
 	font-family: "Open Sans", sans-serif;
+	color: #524641;
+	text-transform: capitalize;
+}
+h2 {
+	color: #d97852;
+	text-transform: capitalize;
+}
+
+button {
+	font-family: "Open Sans", sans-serif;
+	width: 101px;
+	font-size: 16px;
+	text-align: center;
+	background-color: #d1b3a7;
+	color: #524641;
+	border: 1px solid #524641;
+	border-radius: 3px;
+	padding: 14px 6px;
+	&:hover {
+		background-color: #a68e85;
+		color: #ffffff;
+		border-color: #524641;
+	}
 }
