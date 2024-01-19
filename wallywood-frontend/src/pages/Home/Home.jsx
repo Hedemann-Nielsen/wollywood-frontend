@@ -1,8 +1,8 @@
-
+import style from './Home.module.scss';
 export const Home = () => {
   return (
 <main>
-    <div>Main page</div>
+    <div className={style.main}>Main page</div>
 </main>
   );
 }

@@ -9,6 +9,7 @@ import { Login } from './pages/Login/Login';
 import { Routes, Route } from 'react-router-dom'
 import { PageWrapper } from './components/PageWrapper/PageWrapper';
 
+
 function App() {
   
   return (
@@ -17,6 +18,7 @@ function App() {
       <Header></Header>
           <Routes>
               <Route index element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/plakater" element={<Plakater />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />

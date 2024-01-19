@@ -1,0 +1,25 @@
+.header {
+	border-bottom: 2px solid #5c1f06;
+	margin: 0 40px;
+	.basket {
+		position: relative;
+		top: 14px;
+		left: 970px;
+		font-size: 20px;
+		color: #5c1f06;
+		cursor: pointer;
+		&:hover {
+			color: #d97852;
+		}
+	}
+	.link {
+		text-decoration: none;
+	}
+}
+.basket {
+	display: flex;
+	justify-content: flex-end;
+}
+.headerNav {
+	display: flex;
+}

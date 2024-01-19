@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import style from "./Footer.module.scss";
 
+import { FaPinterestSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+
 export const Footer = () => {
   const [footer, setFooter] = useState({});
 
@@ -26,10 +31,24 @@ export const Footer = () => {
   return (
     <>
     <footer className={style.footer}>
-        <p>{footer.name}</p>
+      <div className={style.leftSection}>
+        <div>
+        <h2 className={style.name}>wallywood</h2>
         <p>{footer.address}</p>
-        <p>{footer.zipcode}</p>
-        <p>{footer.city}</p>
+        <p>{footer.zipcode}{footer.city}</p>
+        </div>
+        <div className={style.contactInfo}>
+          <p>CVR: 12345678</p>
+          <p>mail: info@plakatshoppen.dk</p>
+          <p>mobil: +45 98123456</p>
+        </div>
+      </div>
+      <div className={style.social}>
+        <FaPinterestSquare />
+        <FaInstagram />
+        <FaFacebookSquare />
+        <FaTwitterSquare />
+      </div>
     </footer>
     </>
   );
