@@ -1,8 +1,11 @@
+import { MainWrapper } from "../../components/MainWrapper/MainWrapper";
 
 export const Contact = () => {
   return (
-<main>
-    <div>Kontakt page</div>
-</main>
+<>
+<MainWrapper>
+  <p>contact</p>
+</MainWrapper>
+</>
   );
 }

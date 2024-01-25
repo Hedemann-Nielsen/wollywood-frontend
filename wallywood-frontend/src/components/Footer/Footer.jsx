@@ -40,7 +40,7 @@ export const Footer = () => {
         <div className={style.contactInfo}>
           <p>cvr: 12345678</p>
           <a href="mailto:info@plakatshoppen.dk">mail: info@plakatshoppen.dk</a>
-          <p>mobil: +45 98123456</p>
+          <a href="tel:+4598123456">mobil: +45 98123456</a>
         </div>
       </div>
       <div className={style.social}>

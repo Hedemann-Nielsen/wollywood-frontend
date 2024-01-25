@@ -1,8 +1,12 @@
+import { MainWrapper } from "../../components/MainWrapper/MainWrapper";
 
 export const Login = () => {
   return (
-<main>
-    <div>Login page</div>
-</main>
+<>
+<MainWrapper>
+<p>login</p>
+
+</MainWrapper>
+</>
   );
 }

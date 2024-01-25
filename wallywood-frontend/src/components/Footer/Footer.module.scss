@@ -24,8 +24,10 @@
 		text-transform: uppercase;
 	}
 	.contactInfo a {
+		display: block;
 		text-decoration: none;
 		color: #524641;
+		text-transform: lowercase;
 	}
 	.social {
 		position: absolute;
@@ -38,6 +40,9 @@
 	.social > * {
 		margin: 0 2px;
 		cursor: pointer;
+		&:hover {
+			color: #5c1f06;
+		}
 	}
 }
 p {

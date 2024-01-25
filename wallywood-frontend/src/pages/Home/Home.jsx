@@ -1,13 +1,18 @@
-import style from './Home.module.scss';
 
 import Curtain  from "../../assets/images/curtain.jpg";
 import { LatestNews } from '../../components/LatestNews/LatestNews';
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 
 export const Home = () => {
   return (
-<main className={style.main}>
+<>
+  <MainWrapper>
     <img src={Curtain} alt="curtain image" title="curtain image" />
     <LatestNews></LatestNews>
-</main>
+
+  </MainWrapper>
+</>
+
   );
 }
+""

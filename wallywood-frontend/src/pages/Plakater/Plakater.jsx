@@ -1,8 +1,12 @@
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 
 export const Plakater = () => {
   return (
-<main>
-    <div>Plakater page</div>
-</main>
+<>
+<MainWrapper>
+<p>Plakeater</p>
+
+</MainWrapper>
+</>
   );
 }

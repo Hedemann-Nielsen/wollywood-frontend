@@ -31,15 +31,15 @@ h2 {
 }
 
 button {
-	font-family: "Open Sans", sans-serif;
-	width: 101px;
+	margin: 10px 0;
 	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
 	text-align: center;
 	background-color: #d1b3a7;
 	color: #524641;
 	border: 1px solid #524641;
 	border-radius: 3px;
-	padding: 14px 6px;
+	padding: 6px 14px;
 	&:hover {
 		background-color: #a68e85;
 		color: #ffffff;
