@@ -5,15 +5,16 @@ import style from "./PosterDetails.module.scss";
 
 export const PosterDetails = () => {
   const [apiData, setApiData] = useState()
+  const [details, setDetails] = useState({});
   const { poster } = useParams()
-  const cleanDescription = apiData.description.replace(/<\/?[^>]+(>|$)/g, "");
-  
+
   const getData  = async () => {
     const endpoint = `http://localhost:3000/posters/${poster}`
-  const result = await axios.get(endpoint)
-  console.log(result.data);
-  setApiData(result.data);
-}
+    const result = await axios.get(endpoint)
+    console.log(result.data);
+    setApiData(result.data);
+    setDetails(result.description);
+  }
 
 useEffect(() => {
 getData();
@@ -27,7 +28,8 @@ getData();
           <img src={apiData.image} alt="" />
           <div>
             <h3>{apiData.name}</h3>
-            <p>{cleanDescription}</p>
+            <p>{apiData.description}</p>
+            <div dangerouslySetInnerHTML={{ __html: details }} />
             <p>Størrelse{apiData.height} x {apiData.width}</p>
             <p>Varenummer(SKU): {apiData.id}</p>
             <h5>{apiData.price}</h5>
