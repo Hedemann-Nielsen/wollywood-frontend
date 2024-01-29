@@ -30,26 +30,26 @@ export const Footer = () => {
 
   return (
     <>
-    <footer className={style.footer}>
-      <div className={style.leftSection}>
-        <div>
-        <h2 className={style.name}>wallywood</h2>
-        <p>{footer.address}</p>
-        <p>{footer.zipcode} {footer.city}</p>
+      <footer className={style.footer}>
+        <div className={style.leftSection}>
+          <div>
+          <h2 className={style.name}>wallywood</h2>
+          <p>{footer.address}</p>
+          <p>{footer.zipcode} {footer.city}</p>
+          </div>
+          <div className={style.contactInfo}>
+            <p>cvr: 12345678</p>
+            <a href="mailto:info@plakatshoppen.dk">mail: info@plakatshoppen.dk</a>
+            <a href="tel:+4598123456">mobil: +45 98123456</a>
+          </div>
         </div>
-        <div className={style.contactInfo}>
-          <p>cvr: 12345678</p>
-          <a href="mailto:info@plakatshoppen.dk">mail: info@plakatshoppen.dk</a>
-          <a href="tel:+4598123456">mobil: +45 98123456</a>
+        <div className={style.social}>
+          <FaPinterestSquare />
+          <FaInstagramSquare />
+          <FaFacebookSquare />
+          <FaTwitterSquare />
         </div>
-      </div>
-      <div className={style.social}>
-        <FaPinterestSquare />
-        <FaInstagramSquare />
-        <FaFacebookSquare />
-        <FaTwitterSquare />
-      </div>
-    </footer>
+      </footer>
     </>
   );
 };

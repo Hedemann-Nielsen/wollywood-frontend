@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { FaShoppingBasket } from "react-icons/fa";
 import style from "./Header.module.scss";
 
-const arrNavbar = ["home", "plakater", "about", "contact", "login"];
+const arrNavbar = ["home", "posters", "about", "contact", "login"];
 
 export function Header() {
   return (

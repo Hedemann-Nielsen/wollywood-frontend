@@ -1,0 +1,19 @@
+.PosterDetails {
+	padding-top: 90px;
+	display: grid;
+	grid-template-columns: 3fr 9fr;
+	gap: 23px;
+	img {
+		width: 100%;
+	}
+	div {
+		h3 {
+			font-family: "Open Sans", sans-serif;
+			color: #524641;
+			text-transform: capitalize;
+		}
+	}
+	div > * {
+		padding: 5px;
+	}
+}

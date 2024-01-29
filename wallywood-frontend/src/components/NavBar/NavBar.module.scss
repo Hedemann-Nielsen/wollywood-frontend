@@ -1,15 +1,16 @@
 .navBar {
 	ul {
 		position: absolute;
-		top: 55px;
-		left: 860px;
-		height: 27px;
 		display: flex;
+		// justify-content:end;
+		top: 55px;
+		right: 300px;
+		// left: 860px;
+		height: 27px;
 		list-style: none;
 		li {
 			padding: 10px;
-			// margin-right: 10px;
-			a {
+			.NavLink {
 				font-family: "Titillium Web", sans-serif;
 				font-size: 18px;
 				color: #524641;

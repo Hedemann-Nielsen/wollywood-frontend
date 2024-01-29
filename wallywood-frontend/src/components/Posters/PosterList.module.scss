@@ -1,0 +1,26 @@
+.select {
+	position: absolute;
+	right: 260px;
+	width: 160px;
+	height: 43px;
+	padding-left: 24px;
+	margin-top: 44px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	option {
+	}
+}
+.PosterListCard {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	padding-top: 100px;
+	padding-right: 40px;
+	div {
+		text-align: center;
+		img {
+			width: 100%;
+			aspect-ratio: 2/3;
+		}
+	}
+}

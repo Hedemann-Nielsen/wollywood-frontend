@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import style from "./NavBar.module.scss";
 
 export const NavBar = (props) => {
@@ -8,7 +9,17 @@ export const NavBar = (props) => {
             {props.data &&
             props.data.map((item, ItemIndex) => (
                 <li key={ItemIndex}>
-                    <a href={`${item.toLowerCase()}`}>{item}</a>
+                  <NavLink 
+                    to={`${item.toLowerCase()}`}
+                    className={style.NavLink}
+                    style={({ isActive }) => ({
+                      color: isActive
+                          ? "#d97852"
+                          : "#524641",
+                  })}
+                  >
+                    {item}
+                  </NavLink>
                 </li>
                 
             ))}

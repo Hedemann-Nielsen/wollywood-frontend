@@ -3,10 +3,11 @@
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	bottom: 0;
-	width: 1000px;
+	width: 1080px;
 	background-color: #f8f8f8;
 	border-top: 2px solid #cccccc;
-	margin: 0 40px;
+	padding: 0 40px;
+
 	.leftSection {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -31,7 +32,7 @@
 	}
 	.social {
 		position: absolute;
-		right: 0;
+		right: 20px;
 		top: 10px;
 		color: #cccccc;
 		font-size: 28px;
