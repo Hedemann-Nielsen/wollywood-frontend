@@ -19,7 +19,6 @@ h1 {
 	text-transform: uppercase;
 }
 p,
-h2,
 h3 {
 	font-family: "Open Sans", sans-serif;
 	color: #524641;
@@ -27,7 +26,10 @@ h3 {
 }
 h2 {
 	color: #d97852;
-	text-transform: capitalize;
+	font-family: "Open Sans", sans-serif;
+	&::first-letter {
+		text-transform: uppercase;
+	}
 }
 
 button {

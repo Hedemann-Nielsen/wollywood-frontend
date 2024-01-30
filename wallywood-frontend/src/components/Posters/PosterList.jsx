@@ -5,8 +5,9 @@ import style from "./PosterList.module.scss";
 
 export const PosterList = () => {
   const [apiData, setApiData] = useState([])
-  const { genre } = useParams()
-
+  let { genre } = useParams() 
+  genre = (genre) ? genre: "drama" 
+  
   const getData = async () => {
     const endpoint = `http://localhost:3000/posters/list_by_genre/${genre}`
     const result = await axios.get(endpoint)
@@ -20,7 +21,7 @@ useEffect(() => {
 
   return (
     <>
-    
+
     <div>
       <select name="sorter" className={style.select}>
         <option value="Sorter">Sorter</option>
@@ -30,17 +31,22 @@ useEffect(() => {
             )
 })}
       </select>
-
+    
     <div className={style.PosterListCard}>    
     {apiData && apiData.map(item => {
       return (
-        <div key={item.id}>
-          <img src={item.image} alt={item.name} />
-          <h3>{item.name}</h3>
-          <p>kr. {apiData[0].price.toLocaleString("da-DK", { minimumFractionDigits: 2 })}</p>
+        <div  key={item.id}>
+          <Link 
+            to={item.slug} 
+            className={style.posterCard}>
+              <img src={item.image} alt={item.name} />
+              <h3>{item.name}</h3>
+              <p>kr. {apiData[0].price.toLocaleString("da-DK", { minimumFractionDigits: 2 })}</p>
+          </Link>
           <button>Læg i kurv</button>
-          <Link to={item.slug}>les mere</Link>
+          
         </div>
+         
       )
     })}
     </div></div>

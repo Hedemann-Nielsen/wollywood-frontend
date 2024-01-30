@@ -5,7 +5,23 @@ import { NavLink } from 'react-router-dom';
 import { FaShoppingBasket } from "react-icons/fa";
 import style from "./Header.module.scss";
 
-const arrNavbar = ["home", "posters", "about", "contact", "login"];
+const arrNavbar = [
+  {
+    url: "/home",
+    title:"home"},
+  {
+    url: "/posters/drama",
+    title:"posters"}, 
+  {
+    url: "/about",
+    title:"about"}, 
+  {
+    url: "/contact",
+    title:"contact"},
+  { 
+    url: "/login",
+    title:"login"}
+];
 
 export function Header() {
   return (

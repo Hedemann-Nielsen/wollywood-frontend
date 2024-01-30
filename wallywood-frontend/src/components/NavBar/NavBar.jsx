@@ -10,7 +10,7 @@ export const NavBar = (props) => {
             props.data.map((item, ItemIndex) => (
                 <li key={ItemIndex}>
                   <NavLink 
-                    to={`${item.toLowerCase()}`}
+                    to={`${item.url.toLowerCase()}`}
                     className={style.NavLink}
                     style={({ isActive }) => ({
                       color: isActive
@@ -18,7 +18,7 @@ export const NavBar = (props) => {
                           : "#524641",
                   })}
                   >
-                    {item}
+                    {item.title}
                   </NavLink>
                 </li>
                 

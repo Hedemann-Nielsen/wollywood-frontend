@@ -1,0 +1,15 @@
+.aboutWrapper {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	margin-top: 30px;
+	height: 100vh;
+	div {
+		p {
+			padding-top: 20px;
+		}
+	}
+	img {
+		width: 100%;
+		padding: 50px;
+	}
+}

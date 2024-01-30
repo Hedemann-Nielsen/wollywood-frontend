@@ -7,8 +7,6 @@
 	margin-top: 44px;
 	border: 1px solid #cccccc;
 	border-radius: 5px;
-	option {
-	}
 }
 .PosterListCard {
 	display: grid;
@@ -22,5 +20,8 @@
 			width: 100%;
 			aspect-ratio: 2/3;
 		}
+	}
+	.posterCard {
+		text-decoration: none;
 	}
 }
