@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Titillium+Web:wght@200;300;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Titillium+Web:wght@200;300;700;900&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -30,6 +30,12 @@ h2 {
 	&::first-letter {
 		text-transform: uppercase;
 	}
+}
+h5 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 16px;
+	color: #524641;
+	font-weight: 700;
 }
 
 button {

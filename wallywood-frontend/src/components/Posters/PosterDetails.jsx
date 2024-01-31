@@ -28,11 +28,19 @@ getData();
           <img src={apiData.image} alt="" />
           <div>
             <h3>{apiData.name}</h3>
-            <p>{apiData.description}</p>
-            <div dangerouslySetInnerHTML={{ __html: details }} />
-            <p>Størrelse{apiData.height} x {apiData.width}</p>
+
+            <p dangerouslySetInnerHTML={{ __html: apiData.description }}></p>
+
+            <p>Størrelse: {apiData.height} x {apiData.width}</p>
             <p>Varenummer(SKU): {apiData.id}</p>
-            <h5>{apiData.price}</h5>
+            <h5>kr. {apiData.price.toLocaleString("da-DK", { minimumFractionDigits: 2 })}</h5>
+          <input   
+            type="number"
+            className={style.stock}
+            placeholder={apiData.stock}
+            defaultValue={apiData.stock > 0 ? Math.min(apiData.stock, 1) : ''}
+            max={apiData.stock} />
+          <button>Læg i kurv</button>
           </div>
         </div>
         </>
@@ -44,20 +52,6 @@ getData();
       )
     }
     </div>
-//     <>
-// <div>
-//   {apiData ? ()}
-// </div>
-//       <div>
-//         <img src=""></img> 
-//       </div>
-//       <div>
-//         <h3>Navn</h3>
-//         <p>Beskrivelse</p>
-//         <p>Størrelse</p>
-//         <p>Varenummer</p>
-//         <h4>price</h4>
-//       </div>
-//     </>
+
      )
 }

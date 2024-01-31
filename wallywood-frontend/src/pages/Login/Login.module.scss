@@ -1,0 +1,32 @@
+.content {
+	margin-top: 30px;
+
+	.form {
+		margin-top: 10px;
+		label {
+			display: block;
+			width: 307px;
+			border: none;
+		}
+		label,
+		input {
+			height: 38px;
+		}
+		input {
+			border-top: 3px outset #d1b3a7;
+			background-color: #ffffff;
+		}
+		input {
+			width: 307px;
+			border: none;
+			border-top: 3px outset #d1b3a7;
+		}
+		label {
+			font-family: "Open Sans", sans-serif;
+		}
+		.star {
+			color: red;
+			font-size: 8px;
+		}
+	}
+}
