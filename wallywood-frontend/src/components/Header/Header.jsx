@@ -1,7 +1,5 @@
 import { NavBar } from "../NavBar/NavBar";
 import { NavLink } from 'react-router-dom';
-
-
 import { FaShoppingBasket } from "react-icons/fa";
 import style from "./Header.module.scss";
 

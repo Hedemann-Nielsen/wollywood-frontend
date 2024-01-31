@@ -22,4 +22,16 @@
 		margin-right: 20px;
 		text-align: center;
 	}
+	.smileyWrapper {
+		display: flex;
+		justify-content: end;
+		margin-right: 40px;
+		.smiley {
+			font-size: 40px;
+			color: green;
+		}
+		p {
+			padding: 10px 0;
+		}
+	}
 }

@@ -1,4 +1,4 @@
-import { MainWrapper } from "../../components/MainWrapper/MainWrapper";
+import { MainWrapper } from "../../components/Wrappers/MainWrapper/MainWrapper";
 import style from "./About.module.scss";
 import star from "../../assets/images/star.jpg";
 

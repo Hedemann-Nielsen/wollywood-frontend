@@ -1,13 +1,14 @@
 import { useForm } from "react-hook-form";
-import { MainWrapper } from "../../components/MainWrapper/MainWrapper";
+import { MainWrapper } from "../../components/Wrappers/MainWrapper/MainWrapper";
 import style from "./Contact.module.scss";
 import { FaStarOfLife } from "react-icons/fa";
 
 export const Contact = () => {
-  const { register, handleSubmit, formState: {errors}} = useForm()
+  const { register, handleSubmit, formState: {errors}, reset} = useForm()
 
   const submitform = data => {
     console.log(data)
+    reset(); 
   }
   return (
 <>
@@ -17,7 +18,7 @@ export const Contact = () => {
     <form onSubmit={handleSubmit(submitform)} className={style.form}>
       <div>
         <label htmlFor="name">Dit navn: <FaStarOfLife className={style.star} /></label>
-        <input id="name" {...register('name', { required: true, pattern: /^[a-z]+$/i})} />
+        <input id="name" {...register('name', { required: true, pattern: /^[a-zA-Z\s]+$/})} />
         {errors.name && errors.name.type === 'required' && <span className={style.error}>Dette felt skal udfyldes</span>}
         {errors.name && errors.name.type === 'pattern' && <span className={style.error}>Dit navn må ikke indeholde tal.</span>}
       </div>
@@ -30,7 +31,8 @@ export const Contact = () => {
       </div>
       <div>
         <label htmlFor="message">Din Besked <FaStarOfLife className={style.star} /></label>
-        <textarea name="message" rows="10" cols="30"></textarea>
+        <textarea name="message" rows="10" cols="30" {...register('message', {required: true} )}></textarea>
+        {errors.message && errors.message.type === 'required' && <span className={style.error}>Indtast venligst en besked</span>}
       </div>
       <button>Send</button>
     </form>

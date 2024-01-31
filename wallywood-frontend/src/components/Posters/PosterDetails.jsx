@@ -2,10 +2,10 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import style from "./PosterDetails.module.scss";
+import { PiSmileyFill } from "react-icons/pi";
 
 export const PosterDetails = () => {
   const [apiData, setApiData] = useState()
-  const [details, setDetails] = useState({});
   const { poster } = useParams()
 
   const getData  = async () => {
@@ -13,7 +13,6 @@ export const PosterDetails = () => {
     const result = await axios.get(endpoint)
     console.log(result.data);
     setApiData(result.data);
-    setDetails(result.description);
   }
 
 useEffect(() => {
@@ -34,13 +33,18 @@ getData();
             <p>Størrelse: {apiData.height} x {apiData.width}</p>
             <p>Varenummer(SKU): {apiData.id}</p>
             <h5>kr. {apiData.price.toLocaleString("da-DK", { minimumFractionDigits: 2 })}</h5>
-          <input   
-            type="number"
-            className={style.stock}
-            placeholder={apiData.stock}
-            defaultValue={apiData.stock > 0 ? Math.min(apiData.stock, 1) : ''}
-            max={apiData.stock} />
-          <button>Læg i kurv</button>
+            <input   
+              type="number"
+              className={style.stock}
+              placeholder={apiData.stock}
+              defaultValue={apiData.stock > 0 ? Math.min(apiData.stock, 1) : ''}
+              min="0"
+              max={apiData.stock} />
+            <button>Læg i kurv</button>
+            <div className={style.smileyWrapper}>
+              <PiSmileyFill  className={style.smiley} />
+              <p>{apiData.stock} på lager</p>
+            </div>
           </div>
         </div>
         </>

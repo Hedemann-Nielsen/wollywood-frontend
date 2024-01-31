@@ -1,5 +1,5 @@
 import './App.scss'
-import { PageWrapper } from './components/PageWrapper/PageWrapper';
+import { PageWrapper } from './components/Wrappers/PageWrapper/PageWrapper';
 import { Header } from "./components/Header/Header";
 import { AppRouter } from './components/AppRouter/AppRouter';
 import { Footer } from "./components/Footer/Footer";

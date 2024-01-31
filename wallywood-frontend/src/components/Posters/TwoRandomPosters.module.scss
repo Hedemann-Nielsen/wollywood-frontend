@@ -7,6 +7,10 @@ h2 {
 	gap: 20px;
 	margin-bottom: 80px;
 
+	@media (max-width: 768px) {
+		grid-template-columns: auto;
+	}
+
 	.figure {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
@@ -17,6 +21,9 @@ h2 {
 		}
 		figcaption {
 			padding-left: 20px;
+			@media (max-width: 768px) {
+				padding-left: 0;
+			}
 			h3 {
 				text-transform: capitalize;
 			}
