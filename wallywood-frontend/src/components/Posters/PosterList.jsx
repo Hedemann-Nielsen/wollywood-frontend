@@ -11,7 +11,7 @@ export const PosterList = () => {
   const getData = async () => {
     const endpoint = `http://localhost:3000/posters/list_by_genre/${genre}`
     const result = await axios.get(endpoint)
-    console.log(result.data);
+    // console.log(result.data);
     setApiData(result.data);
   }
 
@@ -42,8 +42,8 @@ useEffect(() => {
               <img src={item.image} alt={item.name} />
               <h3>{item.name}</h3>
               <p>kr. {apiData[0].price.toLocaleString("da-DK", { minimumFractionDigits: 2 })}</p>
+          <button>Læs mere</button>
           </Link>
-          <button>Læg i kurv</button>
           
         </div>
          

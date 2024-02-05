@@ -1,9 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
+
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
 	const [loginData, setLoginData] = useState('');
+	const isLoggedIn = !!loginData;
 
 	useEffect(() => {
 		if (sessionStorage.getItem('access_token')) {
@@ -12,7 +14,7 @@ export const AuthProvider = ({ children }) => {
 	}, [children]);
 
 	return (
-		<AuthContext.Provider value={{ loginData, setLoginData }}>
+		<AuthContext.Provider value={{ loginData, setLoginData, isLoggedIn }}>
 			{children}
 		</AuthContext.Provider>
 	);

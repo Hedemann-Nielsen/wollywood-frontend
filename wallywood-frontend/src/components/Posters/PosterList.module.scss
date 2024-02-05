@@ -1,6 +1,5 @@
 .select {
 	position: absolute;
-	right: 260px;
 	width: 160px;
 	height: 43px;
 	padding-left: 24px;
@@ -19,6 +18,9 @@
 		img {
 			width: 100%;
 			aspect-ratio: 2/3;
+		}
+		button {
+			cursor: pointer;
 		}
 	}
 	.posterCard {

@@ -34,4 +34,8 @@
 			padding: 10px 0;
 		}
 	}
+
+	input[type="number"]::-webkit-inner-spin-button {
+		opacity: 1;
+	}
 }

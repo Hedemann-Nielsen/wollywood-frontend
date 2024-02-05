@@ -1,0 +1,20 @@
+.cartContentDes,
+.cartContent,
+.cartContentSum {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.right {
+	text-align: right;
+}
+
+.BsFillTrash3Fill {
+	margin-left: 30px;
+}
+.cartContentDes {
+	margin-bottom: 20px;
+}
+.cartContentSum {
+	margin-top: 20px;
+}

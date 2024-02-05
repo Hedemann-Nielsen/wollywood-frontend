@@ -18,12 +18,7 @@ h1 {
 	opacity: 1;
 	text-transform: uppercase;
 }
-p,
-h3 {
-	font-family: "Open Sans", sans-serif;
-	color: #524641;
-	text-transform: capitalize;
-}
+
 h2 {
 	color: #d97852;
 	font-family: "Open Sans", sans-serif;
@@ -31,11 +26,20 @@ h2 {
 		text-transform: uppercase;
 	}
 }
+h3 {
+	font-family: "Open Sans", sans-serif;
+	color: #524641;
+	text-transform: capitalize;
+}
 h5 {
 	font-family: "Titillium Web", sans-serif;
 	font-size: 16px;
 	color: #524641;
 	font-weight: 700;
+}
+p {
+	font-family: "Open Sans", sans-serif;
+	color: #524641;
 }
 
 button {
